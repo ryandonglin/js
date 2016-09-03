@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Treetable Demo</title>
+
+
+
+<body>
+	<table id="mytable">
+		<tr data-tt-id="0">
+			<td>app</td>
+		</tr>
+		<tr data-tt-id="1" data-tt-parent-id="0">
+			<td>controllers</td>
+		</tr>
+		<tr data-tt-id="1.1" data-tt-parent-id="1">
+			<td>application_controller.rb</td>
+		</tr>
+		<tr data-tt-id="2">
+			<td>helpers</td>
+		</tr>
+		<tr data-tt-id="2-1" data-tt-parent-id="2">
+			<td>models</td>
+		</tr>
+		<tr data-tt-id="2-2" data-tt-parent-id="2">
+			<td>views</td>
+		</tr>
+	</table>
+</body>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.treetable.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.treetable.theme.default.css">
+
+
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/jquery.treetable.js"></script>
+<script>
+	$("#mytable").treetable({expandable: true});
+
+	// highlight select row
+	$("#mytable tbody tr").mousedown(function(){
+	 	$("tr.selected").removeClass("selected");
+	 	$(this).addClass("selected");
+	});
+	
+</script>

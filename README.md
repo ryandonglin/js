@@ -20,6 +20,6 @@ Also: http://cshenger.lofter.com/post/29b2ce_b28794
 
 # 4. Others
 This is a simple demo for treetable, time permitted, I will do some others improvement on this demo. Also any suggestions
-are welcomed, and you can email me for any good ideas.
+are welcomed, Any good ideas can be commited both in github and email.
 # 
 Emailme: ryandonglin@sina.com
